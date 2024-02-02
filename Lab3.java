@@ -10,17 +10,9 @@
 
 import java.util.Scanner;
 
-class Lab2 {
+class Lab3 {
     public static void main(String[] args) {
-        long prize = 225938745L;
-        Scanner input = new Scanner(System.in);
-
-        System.out.println("CS 212 - Lab 2");
-        System.out.println("This program generates 10 lottery tickets.");
-        
-        System.out.print("What's your name? ");
-
-        String customerName = input.nextLine();
+       System.out.println("Welcome to Lab 3");
 
 
     }
