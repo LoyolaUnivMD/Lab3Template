@@ -1,81 +1,69 @@
-# Lab 2 -- It's the POWER BALL!
+# Lab 3 -- Java ATM
 
-**50 points**			
+**50 points**   
 
 ## Purpose:  
 
-In this assignment, you will use Java predefined classes to write a program and generate lottery tickets for players.
+In this assignment, you will develop a program that acts at a smart ATM.
 
 This assignment will give you a chance to practice the following:
 
-1. Using random number generator
-2. Formating number
-3. Working with String
+1. Making decision with if-else
+2. Using loop
+3. Formating number
+4. Using Strings
+5. Creating testcases
 
-## Problem: 
-You are hired to work for a lottery company. Your task is to write a Java program for the Quick Play function from the lottery vending machine.
+## Problem
+You work at a bank and your current project is to design and implement a new interface for a new generation of ATMs.
 
-Your program needs to prompt the player for their name and generate 10 random lottery tickets for them.
+## Description
+Your task is to write a Java program to interact with a customer who wants to **deposit** to, **withdraw** from, and **check the balance** of their bank account. 
+You can assume the customer has been authenticated and authorized to access their account. 
 
-_**Update:**_ Your program should also prompt the player for how much they want to play.
+## Requirements
 
-Each lottery ticket consists of 6 numbers ranging from 0 to 99. After printing out the tickets, your program should print out a "good luck" message with the player's **first name** and their potential winning prize.
+Note: The following is *ALMOST BUT NOT QUITE* an algorithm. Do you see what is wrong with it?
 
-Many users may enter blank spaces before and after the name, make sure your program handles it gracefully.
+1. When a user first accesses the ATM, the user should be asked for their name.  
+2. The ATM should greet the user by name with a greeting message, then ask the user what they would like to do.  
+3. If a user selects **deposit**   
+    * The ATM should increase the user's balance by the provided amount  
+4. Otherwise, if a user selects **withdraw**  
+    * The ATM should reduce the balance by the users provided amount if and only if there are sufficients funds.  
+5. Otherwise, if the user selects **check balance**  
+    * The ATM should display the current balance  
+6. Otherwise, if the user selects **leave**  
+    * The ATM should ask if the user would like a receipt printed or emailed.  
+	* The ATM should display the total amount deposited/withdrawn and a thank you message.  
+	* The ATM should remind them to take the recipe or check their email depending on the option above.  
+7. If the user has not chosen to leave:  
+    * The ATM should return to the main menu and process starting from step 3.  
+8. EXTRA CREDIT: Proper error checking should be included:  
+    * The user should not be able to select invalid menu options.  
+	* The user should not be able to enter negative numbers for deposits or withdrawls.  
+	* The program should not crash if the user enters something that is not a number. 
+9. The initial balance for the user is **$212.90**  
+10. Complete your algorithm before working on your code.   
+11. Complete your test cases before working on your code.  
+12. **Hint:** Classes are the best way to solve this, but we are not done with them yet. Instead, consider the use of methods (you will need the `static` modifier).
 
-_**Update:**_ The Lotto Winning Numbers are :  3, 5, 16, 58, 59, 11.  (Got them from [https://www.lotteryusa.com/])
-
-Everytime any of the lotto numbers match any of the winning numbers, let the money the user is playing be raised to the power of 1.75 (Hint, it's an exponent).
-
-This amount now becomes the prize money. 
-
-The prize money should be stored in the **prize** variable. You should use the **DecimalFormat** class to format the output properly.
-
-## Output:
-
-The output of your program should look like this:
-
-```
-This program generates 10 lottery tickets.
-What is your name?     Steve
-How much do you want to play?     18.45
-
-Great! Steve wants to play $18.45.
-
-Here are the tickets:
------------------
-24 14 62 05 04 11
-30 02 23 11 00 09
-37 02 63 41 33 24
-28 65 61 14 49 03
-01 39 06 48 18 99 
-43 01 63 59 36 22
-04 15 36 30 44 08
-64 38 49 67 37 12
-46 38 49 67 37 12
-25 41 13 35 19 04
------------------
-Good luck Steve!
------------------
-Your Winnings are :
-$18,567,478.98
------------------
-```
-
-It is important to have the format of the number correctly. Any number less than 10 should have a 0 preceding it. Hint: Use **DecimalFormat** class. Please refer to Sections 3.8 and 3.9 if necessary.
-
-## Quick note:
-Complete the algorithm for your program that is started in *algorithm.txt* (the first few steps are given). Fill the rest using pseudocode.
-
-**Show me your algorithm.txt before coding.**
-
-If you are done,  show your program running and on GitHub to the professor before leaving the classroom.
 
 ## What to Submit:
 
-1. Commit & Push your repository to GitHub. It should include algorithm.txt and Lab2.java with all code you write and the proper introductory comments at the very top. Go to GitHub.com to check that it worked.
+To **GitHub**:
+* algorithm.txt containing your algorithm
+* testcases.txt containing at least 5 test cases with a rationale for the test, inputs, and expected outputs.
+* you java file with all code you wrote and the proper comments at the top and throughout your code
 
-2. Each partner should independently write a short (min 150 words) reflection of what you learned in Lab 2, what it was like working with Java classes and with their partner. Submit to Moodle under the Lab 2 assignment. (**This is part of your participation grade**)
+
+Individually, to **Moodle**:
+* a  **reflection** (min 150 words, max 1 page) and answer these questions:  
+    * What did you learn in Lab 3?
+    * What was it like working with if-else and loops in Java? What about when you did it in Python for 151? Did any knowledge carry over? 
+    * What was it like working with your partner for this week? 
+
+	* **This is part of your participation grade**
 
 
 
